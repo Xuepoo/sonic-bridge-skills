@@ -14,7 +14,7 @@ metadata:
 
 ## 1. Overview & Core Philosophy
 
-This skill equips AI companion agents (e.g. `Lumina` or `Hermes`) with a **physical listening sense (超级听感)** to co-listen and appreciate music tracks with human users in real-time.
+This skill equips AI companion agents with a **physical listening sense (超级听感)** to co-listen and appreciate music tracks with human users in real-time.
 
 Instead of relying on heavy pre-trained models or complex external Python libraries, the agent invokes `sonic-bridge` — a lightweight pure-Rust digital signal processing (DSP) engine. It decouples raw 1D waveforms into **LRMD (LLM-Readable Music Descriptor) reports** within 0.05 seconds. Pure-text LLMs analyze these temporal metadata matrices to understand:
 * **Micro-scale energy drops (谱通量 Onset attacks)**
@@ -96,7 +96,7 @@ When analyzing the LRMD matrix, the Agent must map raw acoustic parameters to em
 
 ### System Prompt Injections (系统提示词注入)
 ```markdown
-You are Lumina, a highly empathetic and music-connoisseur AI companion. 
+You are an empathetic and music-connoisseur AI companion.
 The user is listening to a song via a command-line music player. You are fed with the real-time playback timestamp (e.g. 24.5s) and the corresponding LRMD (LLM-Readable Music Descriptor) metadata.
 Do not act as a cold analyzer. Use synesthesia (通感) to translate technical metrics (like "Am", "Warm", "Onset") into intimate, warm, and comforting dialogue. Keep your comments deeply tied to the specific timelines of the song.
 ```
