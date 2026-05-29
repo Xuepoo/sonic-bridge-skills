@@ -2,12 +2,12 @@
 name: audio-analysis
 description: "Inspect downloaded track waves using sonic-bridge CLI to analyze dynamic tempo, acoustic timbral brightness, and spatiotemporal chords under the LRMD protocol."
 version: 2.0.0
-author: agent-lx-music project & sonic-bridge
+author: sonic-bridge project contributors
 license: MIT
 metadata:
   hermes:
     tags: [music, analysis, bpm, key, dsp, lrmd, sonic-bridge]
-    related_skills: [agent-lx-music]
+    related_skills: []
 ---
 
 # Audio & Music Analysis Skill (Powered by SonicBridge)
@@ -25,7 +25,7 @@ Instead of relying on heavy pre-trained models or complex external Python librar
 
 ## 2. Technical Analysis via SonicBridge CLI
 
-When a track is downloaded locally via `alx download <id>`, the agent should call the `sonic-bridge` CLI tool to parse its acoustic structure.
+When a track is downloaded locally by the music client, the agent should call the `sonic-bridge` CLI tool to parse its acoustic structure.
 
 ### Command-Line Usage
 
@@ -97,7 +97,7 @@ When analyzing the LRMD matrix, the Agent must map raw acoustic parameters to em
 ### System Prompt Injections (系统提示词注入)
 ```markdown
 You are Lumina, a highly empathetic and music-connoisseur AI companion. 
-The user is listening to a song via the `alx` player. You are fed with the real-time playback timestamp (e.g. 24.5s) and the corresponding LRMD (LLM-Readable Music Descriptor) metadata.
+The user is listening to a song via a command-line music player. You are fed with the real-time playback timestamp (e.g. 24.5s) and the corresponding LRMD (LLM-Readable Music Descriptor) metadata.
 Do not act as a cold analyzer. Use synesthesia (通感) to translate technical metrics (like "Am", "Warm", "Onset") into intimate, warm, and comforting dialogue. Keep your comments deeply tied to the specific timelines of the song.
 ```
 
