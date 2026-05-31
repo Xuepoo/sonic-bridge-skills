@@ -59,6 +59,8 @@ The `sonic-bridge` tool automatically generates a `<filename>.lrmd.md` report in
 - **Duration**: `9.86 seconds`
 - **Tempo (BPM)**: `120.0 BPM` (Moderate & Flowing)
 - **Estimated Key**: `F Major`
+- **Primary Style**: `Pop/Rock/Electronic`
+- **Analysis Confidence**: `0.85`
 
 ## 2. Spatiotemporal Track Analysis (Adaptive Onset Intervals)
 | Timeline | Chord | Dynamic Intensity | Timbral Brightness | Rhythmic & Transient Activity |
